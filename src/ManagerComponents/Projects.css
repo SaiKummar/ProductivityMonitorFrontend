@@ -1,0 +1,11 @@
+.projectsflexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projectcontainer {
+    background-color: skyblue;
+    border-radius: 25px;
+    padding: 20px;
+}
