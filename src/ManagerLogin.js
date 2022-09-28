@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 
-export default function Login({ setToken }) {
+export default function ManagerLogin({ setToken }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
@@ -13,17 +13,18 @@ export default function Login({ setToken }) {
         event.preventDefault();
         setMsgClass("message")
         setMessage("logging in...")
-        fetch(`http://localhost:5179/api/Authentication/login?Email=${email}&Password=${password}`)
+        fetch(`http://localhost:5179/api/Authentication/managerLogin?Email=${email}&Password=${password}`)
             .then(response => {
                 if (response.status !== 200) {
                     throw new Error(response.status);
                 }
                 return response.json();
             })
-            .then(data => setToken(data.token))
+            .then(data => setToken(data))
             .catch(error => {
                 setMessage("login failed");
                 setMsgClass("error");
+                console.log(error);
             })
     }
 

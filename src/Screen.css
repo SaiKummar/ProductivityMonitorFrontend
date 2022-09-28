@@ -1,0 +1,43 @@
+body {
+  background-color: cornsilk;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+/* ul {
+  position: sticky;
+  top: 0;
+} */
+
+mainheader h1,
+h2,
+p,
+ul,
+li {
+  font-family: sans-serif;
+}
+
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+.mainheader {
+  background-color: crimson;
+  padding: 0;
+}
+
+ul.header li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  font-size: large;
+  display: inline-block;
+}
+
+.btnlist {
+  float: right;
+}
