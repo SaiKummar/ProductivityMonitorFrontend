@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, Link } from "react-router-dom";
-import './Screen.css';
-import ProfileButton from "./ManagerComponents/ProfileButton"
+import '../Screen.css';
+import ProfileButton from "./ProfileButton"
 
 export default function ManagerScreen({ setToken }) {
     function handleLogout() {

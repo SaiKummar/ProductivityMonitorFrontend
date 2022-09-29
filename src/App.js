@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import ManagerScreen from "./ManagerScreen";
 import ResourceScreen from "./ResourceComponents/ResourceScreen";
 import ManagerLogin from "./ManagerComponents/ManagerLogin";
 import useToken from "./CustomHooks/useToken";
@@ -14,6 +13,7 @@ import ResourceLogin from './ResourceComponents/ResourceLogin';
 import ResourceDashboard from './ResourceComponents/ResourceDashboard';
 import ResourceTasks from './ResourceComponents/ResourceTasks';
 import Reports from './ResourceComponents/Reports';
+import ManagerScreen from "./ManagerComponents/ManagerScreen";
 
 function App() {
   const { mtoken, setMToken } = useToken("managertoken");

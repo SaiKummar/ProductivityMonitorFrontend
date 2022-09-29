@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Login.css';
+import '../Login.css';
 
 export default function ManagerLogin({ setToken }) {
     const [email, setEmail] = useState("");
