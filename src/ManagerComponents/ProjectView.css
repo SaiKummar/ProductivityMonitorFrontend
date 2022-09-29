@@ -1,0 +1,17 @@
+.modulesflexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+
+}
+
+.modulecontainer {
+    background-color: skyblue;
+    border-radius: 25px;
+    padding: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    margin: 20px;
+}

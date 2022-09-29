@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './ProjectView.css';
 
 export default function ProjectView({ project, setProject }) {
     const [moduleData, setModuleData] = useState([]);
@@ -20,14 +21,19 @@ export default function ProjectView({ project, setProject }) {
             <p>{project.projectDescription}</p>
             <p>status: {project.projectStatus}</p>
             <h2>Modules</h2>
-            {
-                moduleData.map((module, i) =>
-                    <div key={i}>
-                        <h3>{module.moduleName}</h3>
-                        <p>{module.moduleDescription}</p>
-                    </div>
-                )
-            }
+            <div className='modulesflexbox'>
+                {
+                    moduleData.map((module, i) =>
+                        <div key={i} className="modulecontainer">
+                            <h3>{module.moduleName}</h3>
+                            <p>{module.moduleDescription}</p>
+                        </div>
+                    )
+                }
+            </div>
+            <div className="popupbox">
+                <h1>Tasks</h1>
+            </div>
         </div>
     )
 }

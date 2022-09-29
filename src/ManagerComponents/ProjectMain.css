@@ -1,10 +1,18 @@
+.projectsflexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+}
+
 div.projectcontainer {
     background-color: skyblue;
     border-radius: 25px;
     padding: 20px;
     overflow: hidden;
     white-space: nowrap;
-    width: 250px
+    width: 250px;
+    margin: 20px;
 }
 
 .autoShowHide {

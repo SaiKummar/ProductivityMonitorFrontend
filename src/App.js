@@ -1,21 +1,19 @@
-import './App.css';
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import ManagerScreen from "./ManagerScreen";
-import ResourceScreen from "./ResourceScreen";
-import ManagerLogin from "./ManagerLogin";
-import useToken from "./useToken";
-import useRToken from "./useRToken";
+import ResourceScreen from "./ResourceComponents/ResourceScreen";
+import ManagerLogin from "./ManagerComponents/ManagerLogin";
+import useToken from "./CustomHooks/useToken";
+import useRToken from "./CustomHooks/useRToken";
 import Projects from "./ManagerComponents/Projects"
 import Tasks from "./ManagerComponents/Tasks"
 import Resources from "./ManagerComponents/Resources"
 import Dashboard from './ManagerComponents/Dashboard';
 import Authentication from './Authentication';
-import ResourceLogin from './ResourceLogin';
+import ResourceLogin from './ResourceComponents/ResourceLogin';
 import ResourceDashboard from './ResourceComponents/ResourceDashboard';
 import ResourceTasks from './ResourceComponents/ResourceTasks';
 import Reports from './ResourceComponents/Reports';
-
 
 function App() {
   const { mtoken, setMToken } = useToken("managertoken");
@@ -31,12 +29,7 @@ function App() {
           <Route path="resource" element={<ResourceLogin setToken={setRToken} />} />
         </Route>
 
-        <Route
-          path="*"
-          element={
-            <Navigate to="login" />
-          }
-        />
+        <Route path="*" element={<Navigate to="login" />} />
       </Routes>
     )
   }
