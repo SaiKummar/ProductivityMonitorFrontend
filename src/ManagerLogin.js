@@ -11,8 +11,8 @@ export default function ManagerLogin({ setToken }) {
     //set the retrieved token to app's state
     function handleSubmit(event) {
         event.preventDefault();
-        setMsgClass("message")
-        setMessage("logging in...")
+        setMsgClass("message");
+        setMessage("logging in...");
         fetch(`http://localhost:5179/api/Authentication/managerLogin?Email=${email}&Password=${password}`)
             .then(response => {
                 if (response.status !== 200) {

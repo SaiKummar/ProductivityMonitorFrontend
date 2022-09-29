@@ -47,16 +47,12 @@ function App() {
         <Route path="ManagerConsole" element={<ManagerScreen setToken={setMToken} />} >
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard" element={<Dashboard />} />
-          <Route path="projects" element={<Projects />} />
+          <Route path="projects/*" element={<Projects />} />
+          <Route path="main" />
           <Route path="tasks" element={<Tasks />} />
           <Route path="resources" element={<Resources />} />
         </Route>
-        <Route
-          path="*"
-          element={
-            <Navigate to="ManagerConsole" />
-          }
-        />
+        <Route path="*" element={<Navigate to="ManagerConsole" />} />
       </Routes>
     );
   } else {
@@ -69,12 +65,7 @@ function App() {
           <Route path="tasks" element={<ResourceTasks />} />
           <Route path="reports" element={<Reports />} />
         </Route>
-        <Route
-          path="*"
-          element={
-            <Navigate to="ResourceConsole" />
-          }
-        />
+        <Route path="*" element={<Navigate to="ResourceConsole" />} />
       </Routes>
     );
   }

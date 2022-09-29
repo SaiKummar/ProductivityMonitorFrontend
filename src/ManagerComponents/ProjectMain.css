@@ -1,0 +1,27 @@
+div.projectcontainer {
+    background-color: skyblue;
+    border-radius: 25px;
+    padding: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 250px
+}
+
+.autoShowHide {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+p.autoShowHide {
+    width: auto;
+}
+
+div.projectcontainer:hover {
+    white-space: normal;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.pageheading {
+    padding-left: 20px;
+}

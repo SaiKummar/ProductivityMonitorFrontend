@@ -9,12 +9,12 @@ export default function ManagerScreen({ setToken }) {
     }
     return (
         <div>
-            <h3>Productivity Monitor - Manager</h3>
+            <h2 className="pageheading">Productivity Monitor - Manager</h2>
             <div className='mainheader'>
                 <ul className="header">
                     <li><Link to="dashboard">Home</Link></li>
                     {/* <li><Link to="analytics">Analytics</Link></li> */}
-                    <li><Link to="projects">Projects</Link></li>
+                    <li><Link to="projects/*">Projects</Link></li>
                     <li><Link to="tasks">Tasks</Link></li>
                     {/* <li><Link to="sprints">Sprints</Link></li> */}
                     <li><Link to="resources">Resources</Link></li>

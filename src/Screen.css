@@ -1,14 +1,11 @@
 body {
   background-color: cornsilk;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0;
 }
 
-/* ul {
-  position: sticky;
-  top: 0;
-} */
+.pageheading {
+  padding-left: 20px;
+}
 
 mainheader h1,
 h2,
@@ -27,6 +24,8 @@ ul.header li {
 .mainheader {
   background-color: crimson;
   padding: 0;
+  position: sticky;
+  top: 0;
 }
 
 ul.header li a {
