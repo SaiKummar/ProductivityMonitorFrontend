@@ -14,9 +14,7 @@ export default function ManagerScreen({ setToken }) {
                 <ul className="header">
                     <li><Link to="dashboard">Home</Link></li>
                     {/* <li><Link to="analytics">Analytics</Link></li> */}
-                    <li><Link to="projects/*">Projects</Link></li>
-                    <li><Link to="tasks">Tasks</Link></li>
-                    {/* <li><Link to="sprints">Sprints</Link></li> */}
+                    <li><Link to="projects">Projects</Link></li>
                     <li><Link to="resources">Resources</Link></li>
                     {/* <li><Link to="pastdue">Past Due</Link></li> */}
                     <li className='btnlist'><button onClick={handleLogout}>logout</button></li>

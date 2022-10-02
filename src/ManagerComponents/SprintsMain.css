@@ -1,0 +1,18 @@
+.sprintdetails:hover {
+    cursor: pointer;
+}
+
+.sprintdetails {
+    background-color: #3388FF;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+}
+
+.sprintContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+}

@@ -1,5 +1,5 @@
 body {
-  background-color: cornsilk;
+  background-color: #F6E8B1;
   margin: 0;
 }
 
@@ -32,11 +32,16 @@ ul.header li a {
   color: black;
   font-weight: bold;
   text-decoration: none;
-  padding: 20px;
+  padding: 15px;
   font-size: large;
   display: inline-block;
 }
 
 .btnlist {
   float: right;
+}
+
+div.content {
+  padding-left: 20px;
+  padding-right: 20px;
 }

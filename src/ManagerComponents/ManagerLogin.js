@@ -35,10 +35,12 @@ export default function ManagerLogin({ setToken }) {
                 <label>
                     <p>Email</p>
                     <input type="email" value={email} onChange={event => setEmail(event.target.value)} />
+                    <span>email is saikumar@gmail.com</span>
                 </label>
                 <label>
                     <p>Password</p>
                     <input type="password" value={password} onChange={event => setPassword(event.target.value)} />
+                    <span>password is Inacl4ptp!</span>
                 </label>
                 <div>
                     <button type="submit">Submit</button>

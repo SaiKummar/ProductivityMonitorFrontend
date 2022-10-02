@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from "react-router-dom";
-export default function Authentication({ setMToken, setRToken }) {
+export default function Authentication() {
     return (
         <div>
             <h3>Welcome</h3>

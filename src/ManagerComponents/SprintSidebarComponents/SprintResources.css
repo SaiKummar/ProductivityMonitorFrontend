@@ -1,0 +1,10 @@
+table.resourcetable,
+th,
+td {
+    border: 1px solid;
+}
+
+table.resourcetable {
+    width: 250px;
+    text-align: center;
+}

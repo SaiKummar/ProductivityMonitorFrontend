@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ProjectMain.css';
 
-export default function ProjectMain({ pdata, setProject }) {
-
+export default function ProjectMain({ project, pdata, setProject }) {
+    useEffect(() => {
+        if (Object.keys(project).length !== 0) {
+            setProject({})
+        }
+        console.log("inside projectmain");
+    }, []);
     function handleClick(project) {
         setProject(project);
     }

@@ -1,0 +1,16 @@
+.topBarul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topBarul>li {
+    float: left;
+}
+
+.topBarul>li>a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}

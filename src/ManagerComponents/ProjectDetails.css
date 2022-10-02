@@ -3,15 +3,21 @@
     flex-wrap: wrap;
     justify-content: start;
     align-items: flex-start;
-
 }
 
 .modulecontainer {
-    background-color: skyblue;
+    background-color: #3388FF;
     border-radius: 25px;
-    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     overflow: hidden;
     white-space: nowrap;
     width: 200px;
-    margin: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.modulecontainer:hover {
+    cursor: pointer;
 }

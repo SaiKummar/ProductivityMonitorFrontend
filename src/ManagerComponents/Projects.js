@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './Projects.css';
 import ProjectView from './ProjectView';
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import ProjectMain from './ProjectMain';
@@ -25,16 +24,16 @@ export default function Projects() {
         } else {
             navigate("main");
         }
-    }, [project])
+    }, [project]);
 
     return (
         <div>
             <Routes>
-                <Route path="/*" element={<Navigate to="main" />} />
-                <Route path="main" element={<ProjectMain pdata={pdata} setProject={setProject} />} />
-                <Route path="view" element={<ProjectView project={project} setProject={setProject} />} />
+                <Route path="/" element={<Navigate to="main" />} />
+                <Route path="main" element={<ProjectMain project={project} pdata={pdata} setProject={setProject} />} />
+                <Route path="view/*" element={<ProjectView project={project} setProject={setProject} />} />
             </Routes>
         </div>
     )
-
 }
+

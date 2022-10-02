@@ -5,7 +5,6 @@ import ManagerLogin from "./ManagerComponents/ManagerLogin";
 import useToken from "./CustomHooks/useToken";
 import useRToken from "./CustomHooks/useRToken";
 import Projects from "./ManagerComponents/Projects"
-import Tasks from "./ManagerComponents/Tasks"
 import Resources from "./ManagerComponents/Resources"
 import Dashboard from './ManagerComponents/Dashboard';
 import Authentication from './Authentication';
@@ -23,7 +22,7 @@ function App() {
     return (
       <Routes>
         <Route index element={<Navigate to="login" />} />
-        <Route path="login" element={<Authentication setMToken={setMToken} setRToken={setRToken} />} >
+        <Route path="login" element={<Authentication />} >
           <Route index element={<Navigate to="manager" />} />
           <Route path="manager" element={<ManagerLogin setToken={setMToken} />} />
           <Route path="resource" element={<ResourceLogin setToken={setRToken} />} />
@@ -41,8 +40,6 @@ function App() {
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="projects/*" element={<Projects />} />
-          <Route path="main" />
-          <Route path="tasks" element={<Tasks />} />
           <Route path="resources" element={<Resources />} />
         </Route>
         <Route path="*" element={<Navigate to="ManagerConsole" />} />
